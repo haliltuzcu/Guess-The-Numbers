@@ -17,13 +17,15 @@ button.addEventListener("click", () => {
     } else if (number < input.value) {
       span.innerText = ` ${input.value}'den dah küçük sayi girmelisin, ${counter} hakkin kaldi`;
       counter--;
-    } else {
+    } else if ((number === input.value)) {
       span.innerText = `KAZANDIN ${5 - counter}.denemede, sayı ${input.value}`;
       document.getElementById("img").src = "./images/Animation-para.gif";
       img.style.width = "50vw";
       window.setTimeout(function () {
         location.reload(true);
       }, 3000);
+    } else {
+      span.innerText = `${input.value} bir sayi degil`;
     }
     input.focus();
     input.value = "";
