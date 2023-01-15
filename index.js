@@ -6,7 +6,6 @@ let span = document.getElementById(`span`);
 let img = document.getElementById(`img`);
 
 let counter = 4;
-console.log(number);
 
 button.addEventListener("click", () => {
   console.log(input.value);
