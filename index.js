@@ -12,10 +12,10 @@ button.addEventListener("click", () => {
 
   if (counter > 0) {
     if (number > input.value) {
-      span.innerText = `${input.value} daha küçük sayi girmelisin, ${counter} hakkin kaldi`;
+      span.innerText = `${input.value}'den daha büyük sayi girmelisin, ${counter} hakkin kaldi`;
       counter--;
     } else if (number < input.value) {
-      span.innerText = ` ${input.value} dah büyük sayi girmelisin, ${counter} hakkin kaldi`;
+      span.innerText = ` ${input.value}'den dah küçük sayi girmelisin, ${counter} hakkin kaldi`;
       counter--;
     } else {
       span.innerText = `KAZANDIN ${5 - counter}.denemede, sayı ${input.value}`;
