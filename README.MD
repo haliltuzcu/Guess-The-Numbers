@@ -1,6 +1,6 @@
 # Guess The Numbers
 
-![gif](./images/Animation.gif)
+![gif](./images/Animation_.gif)
 
 # What I used in this project?
 
