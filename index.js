@@ -6,6 +6,7 @@ let span = document.getElementById(`span`);
 let img = document.getElementById(`img`);
 
 let counter = 4;
+console.log(number);
 
 button.addEventListener("click", () => {
   console.log(input.value);
@@ -17,19 +18,20 @@ button.addEventListener("click", () => {
     } else if (number < input.value) {
       span.innerText = ` ${input.value}'den dah küçük sayi girmelisin, ${counter} hakkin kaldi`;
       counter--;
-    } else if ((number === input.value)) {
+    } else if (number == input.value) {
       span.innerText = `KAZANDIN ${5 - counter}.denemede, sayı ${input.value}`;
       document.getElementById("img").src = "./images/Animation-para.gif";
       img.style.width = "50vw";
       window.setTimeout(function () {
         location.reload(true);
       }, 3000);
-    } else {
+    } 
+    else {
       span.innerText = `${input.value} bir sayi degil`;
     }
     input.focus();
     input.value = "";
-  } else if (counter == 0) {
+  } else if (counter === 0) {
     p.innerText = `Game Over`;
     document.getElementById("img").src = "./images/Animation.gif";
     img.style.width = "40vw";
